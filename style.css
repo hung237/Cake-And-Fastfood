@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Jacques+Francois+Shadow&family=Nunito&family=Roboto:ital,wght@1,300&display=swap');
+
+/* font-family: 'Aref Ruqaa Ink', serif;
+font-family: 'Jacques Francois Shadow', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root{
+    --yellow1: #F0B211;
+    --yellow2: #FFCC00;
+    --yellow3:#FFEF92;
+    --yellow4:#FFFFF2;
+    --pink1:#F28482;
+    --pink2:#F5CAC3;
+    --pink3:#FCE0E0;
+    --green1:#84A59D;
+    --green2:#B6D7CF;
+    --green3:#C3EAE0;
+}
+
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   width: unset;
 }
+
+
+
 body {
     margin: 0;
     padding: 0;
