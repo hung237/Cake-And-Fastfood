@@ -129,7 +129,17 @@ top: 0;
   padding: 12px 16px;
 
 }
-.banner-img img{
+.menutoday{
+  background-color: #daf8f0;
+}
+
+.silde-menutoday{
+  
+}
+
+.title-menutoday{
+  text-align: center;
+  color:#84A59D;
 }
 
 
