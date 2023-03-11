@@ -141,5 +141,23 @@ top: 0;
   text-align: center;
   color:#84A59D;
 }
+.cart-menutoday{
+  margin-top: 50px;
+  width: 160px;
+  height: 200px;
+  background-color: #FCE0E0;
+  border-radius: 20px;
+}
+.cart-menutoday p{
+  margin: 27px 24px;
+  font-size: 16px;
+  text-align: center;
+}
+.cart-menutoday img{
+  width: 160px;
+  height: 146px;
+  object-fit: cover;
+  margin-top: 10px;
+}
 
 
