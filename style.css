@@ -137,6 +137,11 @@ top: 0;
   
 }
 
+.list-cart-menutoday {
+  justify-content: space-between;
+  display: inline-block;
+}
+
 .title-menutoday{
   text-align: center;
   color:#84A59D;
@@ -149,7 +154,7 @@ top: 0;
   border-radius: 20px;
 }
 .cart-menutoday p{
-  margin: 27px 24px;
+  margin: 27px 24px 7px 24px;
   font-size: 16px;
   text-align: center;
 }
@@ -157,7 +162,6 @@ top: 0;
   width: 160px;
   height: 146px;
   object-fit: cover;
-  margin-top: 10px;
 }
 
 
