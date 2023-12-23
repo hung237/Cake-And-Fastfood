@@ -1,4 +1,4 @@
-<section class="introduce" style="margin-top: 120px;">
+    <section class="introduce" style="margin-top: 120px;">
         <div class="container ">
             <div class="title-introduce margin-top text-center text-32px">
                 <h1>Welcome to</h1>
@@ -44,7 +44,7 @@
         <div class="container mono-container">
             <div class="text-center mono-img">
                 <div class="title">
-                    <h1 class="">MONO MEDIA</h1>
+                    <h1 class="text-32px">MONO MEDIA</h1>
                     <p class="margin-top">Here is the process we make a cake for you</p>
                 </div>
 

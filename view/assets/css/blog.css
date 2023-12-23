@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+:root{
+  --yellow1: #F0B211;
+  --yellow2: #FFCC00;
+  --yellow3:#FFEF92;
+  --yellow4:#FFFFF2;
+  --pink1:#F28482;
+  --pink2:#F5CAC3;
+  --pink3:#FCE0E0;
+  --green1:#84A59D;
+  --green2:#B6D7CF;
+  --green3:#C3EAE0;
+
+  --main-black: #06113C;
+  --main-orange: #FF8C32;
+  --main-orange-80: #f7954b;
+  --main-yellow2: #F5D061;
+  --main-gray1: #DDDDDD;
+  --main-gray2: #EEEEEE;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -97,11 +117,11 @@ header{
   height: 80px;
   position: fixed;
   z-index: 100;
-  background-color: #FFF9EA;
+  /* background-color: #FFF9EA; */
   top: 0;
   }
   header:hover{
-    background-color: #FFF9EA !important;
+    /* background-color: #FFF9EA !important; */
     top: 0;
     }
   .logo img{
@@ -220,6 +240,8 @@ header{
   background-color: #ffffff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
+  margin: 0 16px;
+  padding-bottom: 8px;
 }
 
 .blog-cart .row {
@@ -242,6 +264,10 @@ header{
 .blog-cart .line {
   max-width: 60px;
   margin: 0 10px 10px 10px;
+}
+
+.line {
+  border-bottom: 3px solid var(--main-orange);
 }
 
 .line-yl {

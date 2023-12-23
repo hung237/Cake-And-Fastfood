@@ -1,3 +1,4 @@
+
 <?php
     $nav = $_GET['act'] ?: "home";
     switch($nav){
@@ -18,6 +19,12 @@
             break;
         case 'cart':
             include "./view/components/cart.php";
+            break;
+        case 'menu-single':
+            include "./view/components/menu-single.php";
+            break;
+        case 'edit-user':
+            include "./view/components/edit-user.php";
             break;
     }
 ?>

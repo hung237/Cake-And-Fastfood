@@ -46,17 +46,9 @@
             <p class="copyright">© 2022 Let’sFood. ALL RIGHT RESERVED.</p>
         </div>
     </footer>
-    <script>
-        window.addEventListener("scroll", function(){
-            var header = document.getElementById('header');
-            header.style.backgroundColor = "#FFF9EA70";
-            header.style.boxShadow = "0 0 10px 4px rgba(0, 0, 0, 0.8)";
-            if(window.scrollY == 0){
-                header.style.backgroundColor = "#FFF9EA";
-                header.style.boxShadow = "none";
-            }
-        })
-    </script>
+    <script src="./view/assets/js/js.js"></script>
+    
+    
 </body>
 
 </html>

@@ -16,6 +16,12 @@ font-family: 'Roboto', sans-serif; */
     --green1: #84a59d;
     --green2: #b6d7cf;
     --green3: #c3eae0;
+
+    --main-black: #06113C;
+    --main-orange: #FF8C32;
+    --main-yellow2: #F5D061;
+    --main-gray1: #DDDDDD;
+    --main-gray2: #EEEEEE;
 }
 html{
     font-family: 'Nunito', sans-serif;
@@ -124,13 +130,15 @@ html{
 }
 
 header {
-    background-color: #FFF9EA;
+    background-color:var(--main-black);
     box-shadow: 0 0 10px gray;
 }
 
 .header {
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    padding: 0 100px;
+    color: white;
 }
 
 .container{
@@ -138,11 +146,78 @@ header {
 }
 
 .left {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.834), rgba(98, 98, 98, 0.405)), url('../../image/admin-img.png');
-    background-position: center;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.834), rgba(98, 98, 98, 0.405)), url('../../assets/image/admin-img.png'); */
+    /* background-position: center; */
+    background-color: var(--main-black);
     height: 1000px;
-    box-shadow: 0 0 20px gray;
+    /* box-shadow: 0 0 20px gray; */
 
+}
+.left ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.left ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+.left ul li i{
+    width: 30px;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+.left ul li i:nth-child(1){
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.left ul li::before{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    background-color: #312857;
+    content: '';
+    height: 100%;
+    left: 5px;
+    transition: 1s;
+}
+.left ul li li{
+    margin-bottom: unset;
+    margin-top: 10px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: showchild 1s ease-in 1 forwards;
+}
+@keyframes showchild{
+    form{
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.list-product, .form{
+    overflow: auto;
+    max-height: 700px;
+    
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
 }
 
 .item-left {
@@ -159,28 +234,30 @@ header {
 .item-left>a>i {
     margin-right: 16px;
     font-size: 24px;
-}
+} */
 
 .sub-menu>a {
     /* display: block; */
     padding: 12px 0;
     margin-left: 20px;
-    display: none;
+    /* display: none; */
     transition: .5s ease-in ;
 }
 
-.item-left:nth-child(1):hover .sub-menu>a{
-    display: block;
-}
 
+
+#manager {
+    width: 100%;
+    height: 100%;
+}
+/* css add product */
 .title{
     color: #797979;
 }
 
 .form{
-    border: .3px solid#797979;
     border-radius: 20px;
-    background-color: var(--yellow4);
+    background-color: var(--main-gray2);
     box-shadow: 0 0 5px gray;
 }
 
@@ -195,8 +272,9 @@ form{
 
 .form-group input, .form-group>textarea, .form-group>select, .form-group>select option  {
     width: 90%;
-    border: .3px solid gray;
+    border: 1px solid var(--main-orange);
     font-size: 16px;
+    outline: none;
     padding: 16px ;
     border-radius: 10px;
     color: #797979;
@@ -217,7 +295,7 @@ button{
     padding: 16px 24px;
     font-size: 16px;
     color: white;
-    background-color: var(--yellow1);
+    background-color: var(--main-orange);
     border-radius: 10px;
     margin-top: 24px;
     margin-right: 80px;
@@ -229,6 +307,88 @@ button{
     display: block;
     clear: both;
 }
+
+/* end css add product */
+
+
+/* css list product */
+.list-product table {
+    text-align: center;
+}
+
+.list-product table tr {
+    border-bottom: 1px solid #000000;
+}
+
+.list-product table tr td {
+    padding: 0 50px;
+}
+
+.list-product table tr td img {
+    width: 80px;
+    height: 80px;
+}
+
+.list-product table tr td a {
+ padding: 12px 18px;
+ font-size: 16px;
+ color: white;
+ border-radius: 10px;
+ background-color: var(--green1);
+ text-decoration: none;
+}
+
+.list-product table tr td a:hover {
+    background-color: var(--pink1);
+}
+
+.bill{
+    width: 80%;
+    margin: 150px 10% 0 10%;
+}
+.bill-tile{
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+}
+.list-bill{
+    border: solid 1px #333;
+    border-radius: 2px;
+    height: 400px;
+    overflow: auto;
+    padding: 0 5px;
+}
+.box-bill{
+    display: flex;
+    margin-top: 4px;
+}
+.index{
+    width: 15%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.total{
+    width: 20%;
+    text-align: center;
+}
+.date{
+    width: 25%;
+    text-align: center;
+}
+.orderer{
+    width: 25%;
+    text-align: center;
+}
+.detail{
+    width: 15%;
+    text-align: center;
+}
+.detail a{
+    color: #333;
+    font-size: 20px;
+}
+/* end css list product */
 
 
 
